@@ -1,0 +1,80 @@
+.app {
+  overflow: hidden;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  border: 2px solid #d3d3d3;
+  border-radius: 5px;
+  padding: 20px;
+  background: coral;
+}
+
+.currency {
+  margin-right: 10px;
+}
+
+.currency::after {
+  content: "£";
+}
+
+.header-component {
+  text-align: center;
+  margin-top: 0px;
+  font-weight: 700;
+}
+
+.input-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-bottom: 30px;
+}
+
+input.slider {
+  width: 100%;
+}
+
+.results-container {
+  display: flex;
+  justify-content: space-around;
+}
+
+.slidecontainer {
+  width: 100%;
+}
+
+.tip-container-label {
+  min-width: 100px;
+}
+
+.tip-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: auto;
+}
+
+.tip-container-slider {
+  flex-grow: 1;
+  margin-bottom: 25px;
+}
+
+.tip-container-value {
+  min-width: 100px;
+  text-align: right;
+  font-weight: 700;
+}
+
+.tip-input {
+  flex: 1;
+}
+
+.tip-value {
+  font-weight: 700;
+}
