@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from "react";
 import TipDisplay from "./TipDisplay";
+import TipPercentageSlider from "./TipPercentageSlider";
 import "./TipCalculator.css";
 
 function TipCalculator() {
@@ -41,20 +42,11 @@ function TipCalculator() {
                 onChange={handleBillAmountChange}
               />
             </div>
-            <div className="tip-container">
-              <div className="tip-container-label">Tip:</div>
-              <div className="tip-container-slider">
-                <input
-                  type="range"
-                  min="1"
-                  max="100"
-                  value={tipPercent}
-                  onChange={handleChangeTipPercent}
-                  className="slider"
-                />
-              </div>
-              <div className="tip-container-value">{tipPercent}</div>
-            </div>
+            <TipPercentageSlider
+              tipPercent={tipPercent}
+              handleChange={handleChangeTipPercent}
+            />
+
             <div className="results-container">
               <TipDisplay title="Tip amount" value={tipAmount} />
               <TipDisplay title="Total inc tip" value={total} />

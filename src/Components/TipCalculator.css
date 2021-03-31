@@ -41,28 +41,6 @@ input.slider {
   width: 100%;
 }
 
-.tip-container-label {
-  min-width: 100px;
-}
-
-.tip-container {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  width: auto;
-}
-
-.tip-container-slider {
-  flex-grow: 1;
-  margin-bottom: 25px;
-}
-
-.tip-container-value {
-  min-width: 100px;
-  text-align: right;
-  font-weight: 700;
-}
-
 .tip-input {
   flex: 1;
 }
