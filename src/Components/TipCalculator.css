@@ -15,14 +15,6 @@
   background: coral;
 }
 
-.currency {
-  margin-right: 10px;
-}
-
-.currency::after {
-  content: "£";
-}
-
 .header-component {
   text-align: center;
   margin-top: 0px;
@@ -73,8 +65,4 @@ input.slider {
 
 .tip-input {
   flex: 1;
-}
-
-.tip-value {
-  font-weight: 700;
 }

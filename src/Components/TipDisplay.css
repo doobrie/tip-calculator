@@ -1,0 +1,11 @@
+.currency {
+  margin-right: 10px;
+}
+
+.currency::after {
+  content: "£";
+}
+
+.tip-value {
+  font-weight: 700;
+}

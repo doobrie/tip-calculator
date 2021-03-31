@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from "react";
+import TipDisplay from "./TipDisplay";
 import "./TipCalculator.css";
 
 function TipCalculator() {
@@ -32,7 +33,8 @@ function TipCalculator() {
         <div>
           <form>
             <div className="input-container">
-              <span className="currency" /><input
+              <span className="currency" />
+              <input
                 className="tip-input"
                 name="totalCost"
                 placeholder="Bill amount"
@@ -54,13 +56,13 @@ function TipCalculator() {
               <div className="tip-container-value">{tipPercent}</div>
             </div>
             <div className="results-container">
-              <div>Tip amount: <span className="currency" /><span className="tip-value">{!isNaN(tipAmount) && tipAmount}</span></div>
-              <div>Total bill with tip: <span className="currency" /><span className="tip-value">{!isNaN(total) && total}</span></div>
+              <TipDisplay title="Tip amount" value={tipAmount} />
+              <TipDisplay title="Total inc tip" value={total} />
             </div>
           </form>
         </div>
       </div>
-    </div >
+    </div>
   );
 }
 
