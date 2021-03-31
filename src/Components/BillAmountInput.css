@@ -1,0 +1,10 @@
+.input-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-bottom: 30px;
+}
+
+.tip-input {
+  flex: 1;
+}

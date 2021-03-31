@@ -21,13 +21,6 @@
   font-weight: 700;
 }
 
-.input-container {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  margin-bottom: 30px;
-}
-
 input.slider {
   width: 100%;
 }
@@ -39,8 +32,4 @@ input.slider {
 
 .slidecontainer {
   width: 100%;
-}
-
-.tip-input {
-  flex: 1;
 }
